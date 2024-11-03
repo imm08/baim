@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    background-image: url(antony.jpeg);
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    display: flex;
+    height: 100vh; 
+    margin: 0; 
+}
+.form-ppp {
+    background-image: url(emyu.jpeg);
+    background-position: center;
+    border-radius: 55px;
+    width: 70%; 
+    padding: 70px 70px; 
+    color: #fff;
+    text-align: justify;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); 
+    overflow: hidden; 
+    border: 2px dashed white;
+}
+.form-ppp h2 {
+    margin-bottom: 20px;
+    border-bottom: 2px dashed white; 
+    padding-bottom: 8px; 
+    text-align: center;
+    display: inline-block; 
+    width: 100%;
+}
+.form-ppp p.menu-title {
+    margin: 20px 0 10px; 
+    text-align: left; 
+    font-size: 18px; 
+}
+.form-www {
+    margin-bottom: 15px;
+}
+.form-www label {
+    font-weight: bold;
+    display: block;
+}
+.form-www input[type="text"],
+.form-www input[type="number"],
+.form-www input[type="date"],
+.form-www select {
+    width: 100%; 
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 4px;
+}
+.menu-ppp {
+    flex-direction: column; 
+    display: flex;
+}
+.menu-item {
+    justify-content: space-between;
+    align-items: left; 
+    margin-bottom: 10px; 
+    display: flex;
+}
+.menu-item input[type="number"] {
+    width: 85%;
+}
+.pembayaran-group {
+    margin-bottom: 15px;
+    align-items: center;
+    display: flex;
+}
+.pembayaran-group label {
+    margin-right: 5px; 
+}
+.pembayaran-group input[type="radio"] {
+    margin-right: 5px; 
+}
+.button-container {
+    align-items: center;      
+    justify-content: center;  
+    display: flex;   
+    margin-top: 15px;
+}
+button {
+    display: flex;           
+    align-items: center; 
+    height: 30px;
+    width: 100px;
+    margin: 0 10px;        
+    border-radius: 5px;   
+    cursor: pointer;
+    border: 1px solid;
+}
+button:hover {
+    background-color: #6bdb90;
+}
+@media (max-width: 500px) {
+.container {
+    width: 50vh;
+    margin: auto;
+}
+}

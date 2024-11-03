@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="form-ppp">
+        <h2>Formulir Nota Pembelian</h2>
+        <form>
+            <div class="form-www">
+                <label for="Nama">Nama Pembeli</label>
+                <input type="text" id="Nama" name="Nama"
+                placeholder="Ketikan Namamu">
+            </div>
+            <div class="form-www">
+                <label for="Alamat">Alamat Pembeli</label>
+                <input type="text" id="Alamat" name="Alamat"
+                placeholder="ketikan Alamatmu">
+            </div>
+            <div class="form-www">
+                <label for="kode_pos">Kode Pos</label>
+                <input type="number" id="kode_pos" name="kode_pos" 
+                placeholder="ketik atau pilih kode pos alamatmu">
+            </div>
+            <div class="form-www">
+                <label for="tanggal">Tanggal Beli</label>
+                <input type="date" id="tanggal" name="tanggal">
+            </div>
+            <div class="form-www">
+                <label>Pembayaran</label>
+                <div class="pembayaran-group">
+                    <input type="radio" name="metode_bayar" 
+                    value="Lunas" id="lunas">
+                    <label for="lunas">Lunas</label>
+                    
+                    <input type="radio" name="metode_bayar" 
+                    value="Belum Bayar" id="belum_bayar">
+                    <label for="belum_bayar">Belum Bayar</label>
+                    
+                    <input type="radio" name="metode_bayar" 
+                    value="DP" id="dp">
+                    <label for="dp">DP</label>
+                    
+                    <input type="number" name="Uang_DP" id="Uang_DP"
+                    placeholder="ketikan angka uang DP">
+                </div>
+            </div>
+            <div class="form-www">
+                <label for="jenis_pembayaran">Jenis Pembayaran</label>
+                <select name="Jenis Pembayaran" id="jenis_pembayaran">
+                    <option value="Cash">Debit</option>
+                    <option value="Kredit">Kredit</option> 
+                    <option value="Debit">Cash</option>
+                </select>
+            </div>
+            <p class="menu-tittle">Menu</p>
+            <div class="menu-ppp">
+                <div class="menu-item">
+                    <input type="checkbox" id="Miie Goreng" name="pesanan">
+                    <label for="Mie Goreng">Mie Goreng</label>
+                    <input type="number" placeholder="ketikan angka pesanan">
+                </div>
+                <div class="menu-item">
+                    <input type="checkbox" id="Nasi Goreng" name="pesanan">
+                    <label for="Nasi Goreng">Nasi Goreng</label>
+                    <input type="number" placeholder="ketikan angka pesanan">
+                </div>
+                <div class="menu-item">
+                    <input type="checkbox" id="Jeruk" name="pesanan">
+                    <label for="Jeruk">Jeruk</label>
+                    <input type="number" placeholder="ketikan angka pesanan">
+                </div>
+                <div class="menu-item">
+                    <input type="checkbox" id="Teh" name="pesanan">
+                    <label for="Teh">Teh</label>
+                    <input type="number" placeholder="ketikan angka pesanan">
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="button" onclick="this.form.reset()">Clear</button>
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
